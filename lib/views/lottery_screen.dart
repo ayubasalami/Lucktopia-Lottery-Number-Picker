@@ -112,6 +112,7 @@ class _LotteryScreenState extends ConsumerState<LotteryScreen> {
       ),
       backgroundColor: AppColors().background,
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: AppColors().background,
         title: const Text('Lucktopia Lottery'),
         actions: (state.selectedNumbers.isNotEmpty ||

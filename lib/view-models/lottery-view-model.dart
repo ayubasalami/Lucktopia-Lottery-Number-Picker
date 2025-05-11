@@ -11,8 +11,9 @@ class LotteryViewModel extends StateNotifier<LotteryState> {
   late ConfettiController _confettiController;
 
   LotteryViewModel() : super(LotteryState.initial()) {
-    _confettiController =
-        ConfettiController(duration: const Duration(seconds: 1));
+    _confettiController = ConfettiController(
+      duration: const Duration(seconds: 1),
+    );
   }
 
   ConfettiController get confettiController => _confettiController;
